@@ -48,9 +48,10 @@ div#meal {
 }
 
 .meal-item {
-  background: #f8f7f5;
+  background: rgb(248, 247, 245);
   border-radius: 10px;
-  box-shadow: 0px 4px 21px -14px rgba(0, 0, 0, 0.79);
+  box-shadow: rgb(0 0 0 / 79%) 0px 4px 21px -14px;
+  margin-bottom: 35px;
 }
 
 .meal-img img {
@@ -65,7 +66,7 @@ div#meal {
 
 .meal-name h3 {
   margin: 0;
-  font: 14px;
+  font-size: 24px;
   color: #252525;
 }
 
@@ -75,7 +76,7 @@ div#meal {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  background-color: salmon;
+  background-color: #f06c4e;
   border-radius: 10px;
   width: 60%;
   height: 80%;
