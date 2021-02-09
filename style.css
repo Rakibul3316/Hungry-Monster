@@ -13,9 +13,15 @@ body {
   text-align: center;
 }
 
+.meal-wrapper h1 {
+  margin-top: 10px;
+}
+
 .meal-search {
   margin: 60px 0px;
 }
+
+/* Search Meal Area */
 
 input.search-content {
   background: #f8f7f5;
@@ -39,7 +45,9 @@ button.search-btn {
   border-bottom-right-radius: 6px;
 }
 
-div#meal {
+/* Meal Result Area */
+
+#meal {
   margin-bottom: 40px;
 }
 
@@ -70,6 +78,8 @@ div#meal {
   color: #252525;
 }
 
+/* Meal Modal Area */
+
 .meal-detail {
   position: fixed;
   top: 50%;
@@ -86,7 +96,7 @@ div#meal {
   text-align: left;
 }
 
-.meal-detail-content {
+.meal-details-content {
   margin-left: 55px;
 }
 
@@ -100,17 +110,6 @@ div#meal {
   font-size: 45px;
   text-transform: capitalize;
   margin-top: 10px;
-}
-
-/* js related */
-.showRecipe {
-  display: block;
-}
-
-.notFound {
-  text-align: center;
-  font-size: 20px;
-  color: #f06c4e;
 }
 
 .meal-detail::-webkit-scrollbar {
@@ -128,6 +127,20 @@ div#meal {
   margin: 15px 0px;
 }
 
+.meal-ingredients ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.meal-ingredients ul li {
+  padding-bottom: 10px;
+}
+
+.meal-ingredients ul li i {
+  padding-right: 10px;
+}
+
 .meal-close-button {
   text-align: center;
 }
@@ -140,4 +153,15 @@ button.close-btn {
   font-weight: 600;
   text-transform: capitalize;
   outline: none;
+}
+
+/* js related */
+.showRecipe {
+  display: block;
+}
+
+.notFound {
+  text-align: center;
+  font-size: 20px;
+  color: #f06c4e;
 }

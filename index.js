@@ -56,11 +56,9 @@ function getMealRecipe(e) {
       .then((res) => res.json())
       .then((data) => mealRecipeModal(data.meals));
   }
-  // console.log("hava :", hava);
 }
 
-//
-
+// get recipe details with modal
 function mealRecipeModal(meal) {
   console.log(meal);
   meal = meal[0];
@@ -73,18 +71,18 @@ function mealRecipeModal(meal) {
         </div>
         <div class="meal-ingredients">
           <h5>ingredients</h5>
-              <ol>
-                <li>${meal.strIngredient1}</li>
-                <li>${meal.strIngredient2}</li>
-                <li>${meal.strIngredient3}</li>
-                <li>${meal.strIngredient4}</li>
-                <li>${meal.strIngredient5}</li>
-                <li>${meal.strIngredient6}</li>
-                <li>${meal.strIngredient7}</li>
-                <li>${meal.strIngredient8}</li>
-                <li>${meal.strIngredient9}</li>
-                <li>${meal.strIngredient10}</li>
-              </ol>
+              <ul>
+                <li><i class="fas fa-check-square"></i>${meal.strIngredient1}</li>
+                <li><i class="fas fa-check-square"></i>${meal.strIngredient2}</li>
+                <li><i class="fas fa-check-square"></i>${meal.strIngredient3}</li>
+                <li><i class="fas fa-check-square"></i>${meal.strIngredient4}</li>
+                <li><i class="fas fa-check-square"></i>${meal.strIngredient5}</li>
+                <li><i class="fas fa-check-square"></i>${meal.strIngredient6}</li>
+                <li><i class="fas fa-check-square"></i>${meal.strIngredient7}</li>
+                <li><i class="fas fa-check-square"></i>${meal.strIngredient8}</li>
+                <li><i class="fas fa-check-square"></i>${meal.strIngredient9}</li>
+                <li><i class="fas fa-check-square"></i>${meal.strIngredient10}</li>
+              </ul>
           </div>
   `;
   mealDetailsContent.innerHTML = html;
